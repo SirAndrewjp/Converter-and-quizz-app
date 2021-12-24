@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.BinaryToDecimal"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Insert Number"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_types"
+        style="@style/Theme.BinaryToDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/input"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10sp"
+        android:background="@drawable/edit_text_border"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner_answer"
+        style="@style/Theme.BinaryToDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner_types"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:padding="10sp"
+        android:background="@drawable/edit_text_border"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/submeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="false"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_answer"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Answer will appear here"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Reset"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/toquiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="To Quizz"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toquiz"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+    <!--
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="⚫ Pressione em submit para iniciar a conversão"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="⚫ Pressione em Reset para repor os dados introduzidos"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    -->
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tocalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95sp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Open Converter"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/HomeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155sp"
+        android:contentDescription="Logo"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcome_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HomeImage"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    <Button
+        android:id="@+id/quizz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_below="@id/welcome_home"
+        android:text="Open Quizz"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

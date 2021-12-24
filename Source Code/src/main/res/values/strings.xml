@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Base converter</string>
+    <string name="welcome">Welcome!</string>
+    <string name="resulttext">You managed to get %1$d out of 32 correct.</string>
+    <string-array name="types">
+        <item>Convert from:</item>
+        <item>Base 2</item>
+        <item>Base 8</item>
+        <item>Base 10</item>
+        <item>Base 16</item>
+    </string-array>
+    <string-array name="answers">
+        <item>Convert to:</item>
+        <item>Base 2</item>
+        <item>Base 8</item>
+        <item>Base 10</item>
+        <item>Base 16</item>
+    </string-array>
+</resources>
